@@ -1,0 +1,121 @@
+/* ===================================
+   STEP 01. 전체 Box Model 계산 방식 통일
+=================================== */
+* {
+    box-sizing: border-box;
+}
+
+/* ===================================
+   STEP 02. body 기본 스타일 및 여백 초기화
+=================================== */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f8;
+    color: #222;
+}
+
+/* ===================================
+   STEP 03. 페이지 전체 컨테이너
+=================================== */
+.container {
+    width: 90%;
+    max-width: 1000px;
+    margin: 40px auto;
+}
+
+/* ===================================
+   Header 스타일링
+=================================== */
+header {
+    background-color: #1e293b;
+    color: white;
+    text-align: center;
+    padding: 24px 0;
+}
+
+h1 {
+    font-size: 32px;
+    margin: 0;
+}
+
+h2 {
+    color: #0f766e;
+    margin-top: 0;
+}
+
+/* ===================================
+   STEP 04. 카드 컴포넌트 (.card)
+=================================== */
+.card {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    padding: 24px;
+    margin-bottom: 24px;
+}
+
+/* ===================================
+   STEP 05. 표(Table) 너비와 셀 공간 조정
+=================================== */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+}
+
+/* ===================================
+   STEP 06. Form 입력 요소 스타일링
+=================================== */
+#signup-form {
+    /* 기존 배경색 유지 또는 필요시 조정 */
+}
+
+input {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    border: 1px solid #bbb;
+    border-radius: 4px;
+}
+
+/* ===================================
+   STEP 07. 버튼 및 링크 스타일링
+=================================== */
+button,
+.button-link {
+    display: inline-block;
+    padding: 10px 16px;
+    border: 0;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.primary-button {
+    background-color: #0f766e;
+    color: white;
+}
+
+/* ===================================
+   STEP 08. CSS 우선순위 실험
+=================================== */
+p {
+    /* color: blue; */
+}
+
+.notice {
+    color: rgb(45, 32, 75);
+}
+
+#important-message {
+    color: red;
+}

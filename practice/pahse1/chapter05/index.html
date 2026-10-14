@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>회원 관리</title>
+    <!-- 외부 CSS 파일 연결 -->
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <!-- 페이지 상단 타이틀 -->
+    <header>
+        <h1>회원 관리</h1>
+    </header>
+
+    <!-- STEP 03. 페이지 전체 컨테이너 -->
+    <main class="container">
+        <!-- STEP 04. 회원 목록 카드 -->
+        <section class="card">
+            <h2>회원 목록</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>이름</th>
+                        <th>이메일</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>홍길동</td>
+                        <td>gildong@example.com</td>
+                    </tr>
+                    <tr>
+                        <td>김철수</td>
+                        <td>chulsoo@example.com</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- STEP 06. 회원 등록 카드 -->
+        <section class="card">
+            <h2>회원 등록</h2>
+            <form id="signup-form">
+                <p>
+                    <label for="name">이름</label>
+                    <input type="text" id="name" placeholder="이름 입력">
+                </p>
+
+                <p>
+                    <label for="email">이메일</label>
+                    <input type="email" id="email" placeholder="이메일 입력">
+                </p>
+
+                <button class="primary-button" type="submit">
+                    회원 등록
+                </button>
+            </form>
+        </section>
+
+        <!-- STEP 08. CSS 우선순위 실험 영역 -->
+        <section class="card">
+            <h2>CSS 선택자 테스트</h2>
+            <p id="important-message" class="notice">
+                회원 정보는 정확히 입력하세요.
+            </p>
+        </section>
+    </main>
+</body>
+</html>
